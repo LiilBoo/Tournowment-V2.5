@@ -15,7 +15,15 @@ const routes: Routes = [
   {
     path:'delete-tour',
     loadComponent: () => import('./Components/delete-tour-lone/delete-tour-lone.component').then((lone) => lone.DeleteTourLoneComponent)
-  }
+  },
+  {
+    path: 'create-player',
+    loadComponent: () => import('./Components/create-player-form-lone/create-player-form-lone.component').then((lone) => lone.CreatePlayerFormLoneComponent)
+  },
+  {
+    path:'create-format-or-pairing-style-form',
+    loadComponent: () => import('./Components/create-format-form/create-format-form.component').then((lone) => lone.CreateFormatFormComponent)
+  },
 ];
 
 @NgModule({

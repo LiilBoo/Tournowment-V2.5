@@ -24,7 +24,6 @@ const components = [
 ];
 
 const modules = [
-  AngularMaterialModule,
   ReactiveFormsModule,
   FormsModule,
   RouterModule,
@@ -32,7 +31,7 @@ const modules = [
 
 @NgModule({
   declarations: [...components],
-  imports: [CommonModule, ...modules],
+  imports: [CommonModule, ...modules,  AngularMaterialModule,],
   exports: [...components, ...modules],
 })
 export class SharedModule {}

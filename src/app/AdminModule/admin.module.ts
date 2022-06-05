@@ -6,16 +6,12 @@ import { DashboardComponent } from './Pages/dashboard/dashboard.component';
 import { UpdateTourFormLoneComponent } from './Components/update-tour-form-lone/update-tour-form-lone.component';
 import { DeleteTourLoneComponent } from './Components/delete-tour-lone/delete-tour-lone.component';
 import { CreateTourFormLoneComponent } from './Components/create-tour-form-lone/create-tour-form-lone.component';
+import { CreatePlayerFormLoneComponent } from './Components/create-player-form-lone/create-player-form-lone.component';
 
-const adminModules = [
-  UpdateTourFormLoneComponent,
-  DeleteTourLoneComponent,
-  CreateTourFormLoneComponent,
-];
+
 
 const adminComponents = [
   DashboardComponent,
-  
 ];
 
 @NgModule({
@@ -25,7 +21,6 @@ const adminComponents = [
   imports: [
     CommonModule,
     AdminRoutingModule,
-    ...adminModules,
   ]
 })
 export class AdminModule { }
