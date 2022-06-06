@@ -12,6 +12,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root',
 })
 export class AdminService {
+  
   private apiUrl: String = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
